@@ -11,6 +11,8 @@ db = SQLAlchemy()
 admin = Admin()
 migration = Migrate()
 
+from .models import Document
+
 
 def create_app():
     app = Flask(__name__)
